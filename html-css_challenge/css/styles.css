@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Regular-400.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-SemiBold-600.ttf) format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter-Bold-700.ttf) format('truetype');
+  font-weight: 700;
+}
+
+/* The fonts names and colors from Readme file of the Challenge */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background-color: hsl(0, 0%, 8%); 
+  color: hsl(0, 0%, 100%); 
+  text-align: center;
+}
+
+div, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 300px;
+  margin: 90px auto 0;
+  background-color: hsl(0, 0%, 12%);
+  padding: 40px 30px 15px 30px;
+  border-radius: 10px;
+}
+
+.userimage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: url("../images/jessica-avatar.png");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 30px;
+}
+
+.username {
+  font-size: 1.5em;
+  font-weight: 600; 
+  margin-bottom: 10px;
+}
+
+.userlocation {
+  font-size: 0.87em;
+  color: hsl(75, 94%, 57%); 
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.userabout {
+  font-size: 0.87em;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.links {
+  text-align: center;
+}
+
+.linkbutton {
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin: 15px auto;
+  border-radius: 8px;
+  font-size: 0.87em;
+  font-weight: 700;
+  width: 270px;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+.linkbutton:hover {
+  background-color: hsl(75, 94%, 57%); 
+  color: black;
+}
+
+/* From the Challenge website */
+.attribution {
+  margin-top: 15px;
+  font-size: 0.75em;
+  color: #aaa;
+}

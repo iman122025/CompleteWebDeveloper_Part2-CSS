@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Positioned Div</title>
+
+        <style>
+            .bluebox {
+                background-color: #bcbcc7;
+                width: 100px;
+                height: 100px;
+                position: fixed;
+                z-index: 3;
+            }
+            .inner {
+                background-color: #e1e1ec;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                font-size: 16px;
+            }
+            .graybox {
+                background-color: #9090ca;
+                width: 150px;
+                height: 300px;
+                font-size: 16px;
+                position: relative;
+                /* z-index: 2; */
+            }
+
+            .large {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to my positioned divs, scroll down</h1>
+
+        <div class="bluebox">
+            <p>I am the first div</p>
+            <div class="inner"></div>
+        </div>
+        <!-- I repeated the gray div to create scroll and test the blue fixed div -->
+        <div class="graybox">
+            <p>I am the second div</p>
+        </div>
+        <div class="graybox">
+            <p>I am the third div</p>
+        </div>
+        <div class="graybox">
+            <p>I am the fourth div</p>
+        </div>
+        <div class="graybox">
+            <p>I am the fifth div</p>
+        </div>
+
+        <p class="large">
+            Do you think that will work? <strong>Let's try!!</strong>
+        </p>
+    </body>
+</html>
